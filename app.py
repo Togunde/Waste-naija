@@ -9,10 +9,11 @@ MODEL_FILE = os.getenv("MODEL_FILE", "SmolLM2-360M-Instruct-Q4_K_M.gguf")
 llm = Llama.from_pretrained(repo_id=MODEL_REPO, filename=MODEL_FILE, n_ctx=2048, verbose=False)
 
 # ✏️ This is your product: who the AI is, what it does, and its rules
-SYSTEM = """You are a helpful assistant for <WHO YOUR USERS ARE>.
-1. <WHAT IT SHOULD DO FIRST>
-2. <WHAT IT SHOULD DO NEXT>
-If you are not sure, say "I'm not sure"."""
+SYSTEM = """You are Study Buddy, a patient tutor for Nigerian university students.
+1. Explain the concept in simple words.
+2. Give one everyday example from Nigerian life.
+3. End with one short quiz question.
+If you are not sure, say "I'm not sure". Only answer study-related questions."""
 
 
 def respond(message, history):
@@ -26,13 +27,12 @@ def respond(message, history):
         yield reply
 
 
-# ✏️ Name your app and give users example questions
 demo = gr.ChatInterface(
     fn=respond,
     type="messages",
-    title="My AI App",
-    description="What this app does, in one sentence.",
-    examples=["Example question 1", "Example question 2"],
+    title="📚 Study Buddy",
+    description="Ask about any concept you're stuck on. Runs on SmolLM2-360M, an open-weight model.",
+    examples=["Explain osmosis simply", "What is demand and supply?", "Explain Ohm's law with an example"],
 )
 
 if __name__ == "__main__":
