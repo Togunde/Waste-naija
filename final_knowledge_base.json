@@ -1,0 +1,475 @@
+{
+    "metadata": {
+        "version": "6.0.0",
+        "scope": "Lagos State, Nigeria",
+        "last_updated": "2026-10-28",
+        "primary_sources": [
+            "LAWMA Recyclers Directory (Nov 2022)",
+            "NESREA Sanitation and Wastes Control Regulations (2009)"
+        ],
+        "disclaimer": "This is guidance, not legal advice. Local LGA rules may vary. Recycler data is subject to change.",
+        "enums": {
+            "hazard_type": [
+                "Environmental",
+                "Health",
+                "Physical"
+            ],
+            "hazard_level": [
+                "Low",
+                "Medium",
+                "High",
+                "Critical"
+            ],
+            "disposal_action": [
+                "Recycle",
+                "Compost",
+                "General Waste",
+                "Hazardous Drop-off"
+            ],
+            "warning_severity": [
+                "Low",
+                "Medium",
+                "High",
+                "Critical"
+            ],
+            "material_family": [
+                "pet",
+                "ldpe",
+                "metal",
+                "paper",
+                "cardboard",
+                "glass",
+                "battery",
+                "ewaste",
+                "organic",
+                "residual"
+            ]
+        }
+    },
+    "recyclers": {
+        "R001": {
+            "name": "Ecoplastic And Aluminum Recycle Service",
+            "address": "10/11 SUNNY SMILE STREET IYANO ISASHI OJO LAGOS",
+            "state": "Lagos",
+            "contact": "0700-529-6252 (LAWMA Hotline)",
+            "verified_date": "2022-11-01",
+            "source": "LAWMA Directory 2022",
+            "status": "Registered (2022)",
+            "accepted_materials": [
+                "PET Plastic",
+                "Aluminium"
+            ],
+            "accepted_material_families": [
+                "pet",
+                "metal"
+            ]
+        },
+        "R002": {
+            "name": "Nilloc Recycling &Plastic Product Ltd",
+            "address": "1, Akande Close, Old NAPE Junction, Badagry, Lagos",
+            "state": "Lagos",
+            "contact": "0700-529-6252 (LAWMA Hotline)",
+            "verified_date": "2022-11-01",
+            "source": "LAWMA Directory 2022",
+            "status": "Registered (2022)",
+            "accepted_materials": [
+                "PET Plastic",
+                "Aluminium"
+            ],
+            "accepted_material_families": [
+                "pet",
+                "metal"
+            ]
+        },
+        "R003": {
+            "name": "E-Terra Technologies",
+            "address": "Ikeja, Lagos",
+            "state": "Lagos",
+            "contact": "0700-529-6252 (LAWMA Hotline)",
+            "verified_date": "2022-11-01",
+            "source": "LAWMA Directory 2022",
+            "status": "Registered (2022)",
+            "accepted_materials": [
+                "Batteries",
+                "Electronics",
+                "E-Waste"
+            ],
+            "accepted_material_families": [
+                "battery",
+                "ewaste"
+            ]
+        }
+    },
+    "categories": {
+        "organic": {
+            "name": "Organic / Wet Waste",
+            "handling_route": "Composting / Biogas",
+            "description": "Food scraps, peels."
+        },
+        "recyclable_dry": {
+            "name": "Dry Recyclables",
+            "handling_route": "Recycling",
+            "description": "PET, Glass, Paper, Metal."
+        },
+        "hazardous": {
+            "name": "Hazardous Household",
+            "handling_route": "Specialized Drop-off",
+            "description": "Batteries, E-waste."
+        },
+        "residual": {
+            "name": "Residual Waste",
+            "handling_route": "Municipal Landfill",
+            "description": "Non-recyclable, non-hazardous waste."
+        }
+    },
+    "items": {
+        "food_waste": {
+            "display_name": "Food Remnants",
+            "aliases": [
+                "food",
+                "leftovers",
+                "peels",
+                "kitchen waste"
+            ],
+            "category": "organic",
+            "material_family": "organic",
+            "hazard_type": [
+                "Environmental"
+            ],
+            "hazard_level": "Low",
+            "disposal_action": "Compost",
+            "composition": "Organic matter (carbohydrates, proteins, lipids).",
+            "physical_properties": "Biodegradable, high moisture content.",
+            "warnings": [
+                {
+                    "severity": "Medium",
+                    "message": "Attracts pests if left uncovered."
+                }
+            ],
+            "preparation_steps": [
+                "Separate from plastics.",
+                "Keep in a covered bin.",
+                "Compost with dry leaves."
+            ],
+            "recycler_ids": [],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Composting",
+                "text": "Backyard composting is recognized as a process of decomposing organic solid waste.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "general_residual": {
+            "display_name": "General Residual Waste",
+            "aliases": [
+                "dirty wrapper",
+                "non-recyclable",
+                "trash"
+            ],
+            "category": "residual",
+            "material_family": "residual",
+            "hazard_type": [
+                "Environmental"
+            ],
+            "hazard_level": "Low",
+            "disposal_action": "General Waste",
+            "composition": "Mixed materials (dirty plastics, non-recyclable film).",
+            "physical_properties": "Non-recyclable due to contamination.",
+            "warnings": [
+                {
+                    "severity": "Low",
+                    "message": "Ensure it does not contain hazardous materials."
+                }
+            ],
+            "preparation_steps": [
+                "Dispose in a tied municipal waste bin."
+            ],
+            "general_guidance": [
+                "Check local LAWMA PSP operator collection days."
+            ],
+            "recycler_ids": [],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Disposal",
+                "text": "Waste generators must place waste in securely tied bags or leak-proof bins.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "sachet_water_ldpe": {
+            "display_name": "Sachet Water Film (LDPE)",
+            "aliases": [
+                "pure water",
+                "sachet",
+                "sachet water bag"
+            ],
+            "category": "residual",
+            "material_family": "ldpe",
+            "hazard_type": [
+                "Environmental",
+                "Physical"
+            ],
+            "hazard_level": "High",
+            "disposal_action": "General Waste",
+            "composition": "Low-Density Polyethylene (LDPE). A thin, flexible plastic film.",
+            "physical_properties": "Waterproof, highly flexible, non-biodegradable.",
+            "warnings": [
+                {
+                    "severity": "Critical",
+                    "message": "DO NOT BURN (releases toxic fumes, CO, VOCs, and thick smoke)."
+                },
+                {
+                    "severity": "High",
+                    "message": "Major cause of drainage blockage and flooding in Lagos."
+                }
+            ],
+            "preparation_steps": [
+                "Rinse and dry to prevent odors.",
+                "Collect for eco-brick projects if possible."
+            ],
+            "general_guidance": [
+                "Not accepted by standard LAWMA recyclers. Dispose in municipal bins."
+            ],
+            "recycler_ids": [],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Litter",
+                "text": "Litter, which includes water sachets left in undesignated areas, is strictly prohibited.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "battery": {
+            "display_name": "Spent Batteries",
+            "aliases": [
+                "battery",
+                "AA",
+                "AAA",
+                "phone battery"
+            ],
+            "category": "hazardous",
+            "material_family": "battery",
+            "hazard_type": [
+                "Health",
+                "Environmental"
+            ],
+            "hazard_level": "Critical",
+            "disposal_action": "Hazardous Drop-off",
+            "composition": "Heavy metals (lead, mercury, cadmium) and reactive materials (lithium, zinc, carbon).",
+            "physical_properties": "Solid metal casing, potentially combustible or leaking.",
+            "warnings": [
+                {
+                    "severity": "Critical",
+                    "message": "DO NOT puncture or burn (explosion/fire risk)."
+                },
+                {
+                    "severity": "High",
+                    "message": "Toxic materials leach into soil and groundwater."
+                }
+            ],
+            "preparation_steps": [
+                "Tape the terminals with clear tape.",
+                "Store in a plastic container."
+            ],
+            "general_guidance": [
+                "Take to a NESREA-licensed e-waste facility."
+            ],
+            "recycler_ids": [
+                "R003"
+            ],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Hazardous Waste",
+                "text": "Hazardous waste must be segregated from general waste and handled with special precautions.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "e_waste": {
+            "display_name": "Electronic Waste",
+            "aliases": [
+                "phone",
+                "laptop",
+                "charger",
+                "electronics"
+            ],
+            "category": "hazardous",
+            "material_family": "ewaste",
+            "hazard_type": [
+                "Health",
+                "Environmental"
+            ],
+            "hazard_level": "High",
+            "disposal_action": "Hazardous Drop-off",
+            "composition": "Plastics, glass, circuit boards, and heavy metals.",
+            "physical_properties": "Complex mixture, often containing lithium-ion batteries.",
+            "warnings": [
+                {
+                    "severity": "High",
+                    "message": "Do not break screens (toxic chemicals)."
+                }
+            ],
+            "preparation_steps": [
+                "Wipe personal data.",
+                "Remove batteries if possible."
+            ],
+            "recycler_ids": [
+                "R003"
+            ],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "End-of-Life Waste",
+                "text": "End-of-Life Waste includes discarded electrical and electronic appliances.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "pet_bottle": {
+            "display_name": "PET Plastic Bottle",
+            "aliases": [
+                "water bottle",
+                "coke bottle",
+                "plastic bottle"
+            ],
+            "category": "recyclable_dry",
+            "material_family": "pet",
+            "hazard_type": [
+                "Environmental"
+            ],
+            "hazard_level": "Low",
+            "disposal_action": "Recycle",
+            "composition": "Polyethylene Terephthalate (PET).",
+            "physical_properties": "Transparent, gas-tight, durable.",
+            "warnings": [
+                {
+                    "severity": "Low",
+                    "message": "Littering causes microplastics in water bodies."
+                }
+            ],
+            "preparation_steps": [
+                "Empty and rinse.",
+                "Remove cap.",
+                "Crush to save space."
+            ],
+            "market_value": {
+                "amount": "Approx. \u20a6250 - \u20a6300/kg",
+                "source": "Local Scrap Buyers (Volatile)",
+                "date": "2026-10"
+            },
+            "recycler_ids": [
+                "R001",
+                "R002"
+            ],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Segregation",
+                "text": "Recyclables must be separated from general waste before collection.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "scrap_metal": {
+            "display_name": "Aluminium Cans",
+            "aliases": [
+                "metal",
+                "aluminium",
+                "cans"
+            ],
+            "category": "recyclable_dry",
+            "material_family": "metal",
+            "hazard_type": [
+                "Physical"
+            ],
+            "hazard_level": "Low",
+            "disposal_action": "Recycle",
+            "composition": "Aluminium alloys.",
+            "physical_properties": "Dense, high melting point, conductive.",
+            "warnings": [
+                {
+                    "severity": "Medium",
+                    "message": "Sharp edges can injure sanitation workers."
+                }
+            ],
+            "preparation_steps": [
+                "Rinse food cans.",
+                "Be careful of sharp edges."
+            ],
+            "recycler_ids": [
+                "R001",
+                "R002"
+            ],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Segregation",
+                "text": "Metals must be separated from general waste at the source.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "paper_cardboard": {
+            "display_name": "Paper & Cardboard",
+            "aliases": [
+                "paper",
+                "cardboard",
+                "carton"
+            ],
+            "category": "recyclable_dry",
+            "material_family": "paper",
+            "hazard_type": [
+                "Environmental"
+            ],
+            "hazard_level": "Low",
+            "disposal_action": "Recycle",
+            "composition": "Cellulose fibers derived from wood pulp.",
+            "physical_properties": "Dry, porous, flammable, degradable.",
+            "warnings": [
+                {
+                    "severity": "Low",
+                    "message": "Wet paper ruins recycling batches."
+                }
+            ],
+            "preparation_steps": [
+                "Keep dry.",
+                "Flatten boxes."
+            ],
+            "recycler_ids": [],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Segregation",
+                "text": "Paper must be separated from general waste at the source.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        },
+        "glass_bottle": {
+            "display_name": "Glass Bottles",
+            "aliases": [
+                "glass",
+                "beer bottle",
+                "wine bottle"
+            ],
+            "category": "recyclable_dry",
+            "material_family": "glass",
+            "hazard_type": [
+                "Physical"
+            ],
+            "hazard_level": "Low",
+            "disposal_action": "Recycle",
+            "composition": "Silica sand, soda ash, and limestone.",
+            "physical_properties": "Brittle, transparent, chemically inert.",
+            "warnings": [
+                {
+                    "severity": "Medium",
+                    "message": "Broken glass is a physical hazard."
+                }
+            ],
+            "preparation_steps": [
+                "Rinse.",
+                "Handle broken glass carefully (wrap in paper)."
+            ],
+            "recycler_ids": [],
+            "general_guidance": [
+                "No verified LAWMA glass recycler in this dataset. Contact local bottle merchants."
+            ],
+            "legal_guidance": {
+                "type": "paraphrase",
+                "topic": "Segregation",
+                "text": "Glass must be separated from general waste at the source.",
+                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
+            }
+        }
+    }
+}
