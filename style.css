@@ -5,8 +5,7 @@ html,body,[data-testid="stAppViewContainer"]{background:var(--bg);}
 #MainMenu,footer{visibility:hidden;}
 header[data-testid="stHeader"]{background:transparent;}
 h1,h2,h3,h4{letter-spacing:-.01em;color:var(--ink);}
-.stApp{background:var(--bg);color:var(--ink);}
-[data-testid="stMarkdownContainer"] p,[data-testid="stMarkdownContainer"] li{color:var(--ink);}
+.stApp,[data-testid="stMarkdownContainer"] p,[data-testid="stCaptionContainer"]{color:var(--ink);}
 
 /* hero */
 .hero-section{background:linear-gradient(135deg,var(--g1),#0b6b3e 70%,#084c2c);color:#fff;border-radius:20px;padding:26px 26px 22px;margin-bottom:12px;box-shadow:var(--shadow);position:relative;overflow:hidden;}
@@ -86,38 +85,3 @@ ol.steps .n{flex:0 0 26px;height:26px;border-radius:50%;background:var(--g1);col
   .stButton>button{min-height:54px;font-size:1.05rem;}
   html{font-size:16px;}
 }
-
-
-/* ===== Force a light look even when the browser / Streamlit is in DARK mode (fixes invisible sidebar text) ===== */
-.hero-section h1,.hero-section p{color:#fff!important;}
-.stButton>button,.stButton>button *,[data-testid="stBaseButton-secondary"] *,[data-testid="stBaseButton-primary"] *{color:#fff!important;}
-[data-testid="stSidebar"],[data-testid="stSidebar"]>div{background:#ffffff!important;}
-[data-testid="stSidebar"]{border-right:1px solid var(--line);}
-[data-testid="stSidebar"] *{color:var(--ink);}
-[data-testid="stSidebar"] .stButton>button,[data-testid="stSidebar"] .stButton>button *{color:#fff!important;}
-[data-testid="stSidebar"] [data-testid="stCaptionContainer"],[data-testid="stSidebar"] [data-testid="stCaptionContainer"] *{color:var(--muted)!important;}
-[data-testid="stSidebarCollapseButton"] *,[data-testid="stSidebarCollapsedControl"] *,[data-testid="stExpandSidebarButton"] *{color:var(--ink)!important;}
-[data-testid="stMetricValue"],[data-testid="stMetricValue"] *,[data-testid="stMetricLabel"],[data-testid="stMetricLabel"] *{color:var(--ink)!important;}
-[data-testid="stCaptionContainer"],[data-testid="stCaptionContainer"] *{color:var(--muted)!important;}
-[data-testid="stWidgetLabel"],[data-testid="stWidgetLabel"] *{color:var(--ink)!important;}
-[data-testid="stExpander"]{background:#fff!important;border:1px solid var(--line)!important;border-radius:12px!important;}
-[data-testid="stExpander"] summary,[data-testid="stExpander"] summary *,[data-testid="stExpander"] details *{color:var(--ink)!important;}
-div[data-baseweb="select"]>div{background:#fff!important;border:1px solid #cfdcd3!important;border-radius:12px!important;}
-div[data-baseweb="select"] *{color:var(--ink)!important;}
-div[data-baseweb="select"] svg{fill:var(--ink)!important;}
-div[data-baseweb="popover"],div[data-baseweb="popover"]>div,div[data-baseweb="popover"] ul,div[data-baseweb="popover"] li{background:#fff!important;color:var(--ink)!important;}
-div[data-baseweb="popover"] li:hover{background:#e8f6ee!important;}
-[data-testid="stCameraInput"]>div,[data-testid="stCameraInput"] section{background:#f1f5f2!important;border-radius:14px!important;}
-[data-testid="stCameraInput"] *{color:var(--ink);}
-[data-testid="stCameraInput"] button,[data-testid="stCameraInput"] button *{color:#fff!important;}
-[data-testid="stCameraInput"] a{color:#1557b0!important;}
-[data-testid="stFileUploaderDropzone"]{background:#f1f5f2!important;border:1.5px dashed #b7cdbf!important;border-radius:14px!important;}
-[data-testid="stFileUploaderDropzone"] *{color:var(--ink)!important;}
-[data-testid="stFileUploaderDropzone"] button{background:#fff!important;border:1px solid #b7cdbf!important;box-shadow:none!important;}
-[data-testid="stTabs"] button[role="tab"] p,[data-testid="stTabs"] button[role="tab"]{color:var(--ink)!important;}
-[data-testid="stTabs"] button[aria-selected="true"] p{color:var(--g2)!important;font-weight:800;}
-[data-testid="stAlert"]>div{background:#fff8e1!important;border:1px solid #ffe082;border-radius:12px;}
-[data-testid="stAlert"] *{color:#4a3200!important;}
-[data-testid="stProgress"] *,[data-testid="stProgress"] p{color:var(--ink)!important;}
-[data-testid="stStatusWidget"],[data-testid="stStatus"]{background:#fff!important;}
-[data-testid="stImage"] img{border-radius:14px;}
