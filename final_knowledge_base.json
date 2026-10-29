@@ -1,475 +1,305 @@
 {
     "metadata": {
-        "version": "6.0.0",
-        "scope": "Lagos State, Nigeria",
-        "last_updated": "2026-10-28",
-        "primary_sources": [
-            "LAWMA Recyclers Directory (Nov 2022)",
-            "NESREA Sanitation and Wastes Control Regulations (2009)"
-        ],
-        "disclaimer": "This is guidance, not legal advice. Local LGA rules may vary. Recycler data is subject to change.",
-        "enums": {
-            "hazard_type": [
-                "Environmental",
-                "Health",
-                "Physical"
-            ],
-            "hazard_level": [
-                "Low",
-                "Medium",
-                "High",
-                "Critical"
-            ],
-            "disposal_action": [
-                "Recycle",
-                "Compost",
-                "General Waste",
-                "Hazardous Drop-off"
-            ],
-            "warning_severity": [
-                "Low",
-                "Medium",
-                "High",
-                "Critical"
-            ],
-            "material_family": [
-                "pet",
-                "ldpe",
-                "metal",
-                "paper",
-                "cardboard",
-                "glass",
-                "battery",
-                "ewaste",
-                "organic",
-                "residual"
-            ]
-        }
+        "version": "9.0.0",
+        "scope": "Lagos State, Nigeria"
     },
     "recyclers": {
         "R001": {
             "name": "Ecoplastic And Aluminum Recycle Service",
-            "address": "10/11 SUNNY SMILE STREET IYANO ISASHI OJO LAGOS",
-            "state": "Lagos",
-            "contact": "0700-529-6252 (LAWMA Hotline)",
-            "verified_date": "2022-11-01",
-            "source": "LAWMA Directory 2022",
-            "status": "Registered (2022)",
+            "address": "10/11 Sunny Smile Street, Iyano Isashi, Ojo, Lagos",
+            "contact": "0803 694 0416 (LAWMA register; call first)",
+            "maps_query": "Ecoplastic And Aluminum Recycle Service Iyano Isashi Ojo Lagos",
             "accepted_materials": [
                 "PET Plastic",
                 "Aluminium"
-            ],
-            "accepted_material_families": [
-                "pet",
-                "metal"
             ]
         },
         "R002": {
-            "name": "Nilloc Recycling &Plastic Product Ltd",
+            "name": "Nilloc Recycling & Plastic Product Ltd",
             "address": "1, Akande Close, Old NAPE Junction, Badagry, Lagos",
-            "state": "Lagos",
-            "contact": "0700-529-6252 (LAWMA Hotline)",
-            "verified_date": "2022-11-01",
-            "source": "LAWMA Directory 2022",
-            "status": "Registered (2022)",
+            "contact": "0700-529-6252 (LAWMA hotline; call first)",
+            "maps_query": "Nilloc Recycling Badagry Lagos",
             "accepted_materials": [
                 "PET Plastic",
                 "Aluminium"
-            ],
-            "accepted_material_families": [
-                "pet",
-                "metal"
             ]
         },
         "R003": {
-            "name": "E-Terra Technologies",
-            "address": "Ikeja, Lagos",
-            "state": "Lagos",
-            "contact": "0700-529-6252 (LAWMA Hotline)",
-            "verified_date": "2022-11-01",
-            "source": "LAWMA Directory 2022",
-            "status": "Registered (2022)",
+            "name": "E-Terra Technologies Ltd (NESREA-listed e-waste centre)",
+            "address": "Plot 750 Baale Shoba Street, Abule-Ado, off Badagry Expressway, Amuwo-Odofin, Lagos",
+            "contact": "Check eterra.com.ng; call first",
+            "maps_query": "E-Terra Technologies Abule-Ado Badagry Expressway Lagos",
             "accepted_materials": [
-                "Batteries",
-                "Electronics",
-                "E-Waste"
-            ],
-            "accepted_material_families": [
-                "battery",
-                "ewaste"
+                "Electronics (e-waste)",
+                "Batteries (confirm type first)"
+            ]
+        },
+        "R004": {
+            "name": "RecyclePoints Limited",
+            "address": "Alakija, Festac, Amuwo-Odofin, Lagos",
+            "contact": "0809 800 2400 or 0706 203 1060 (LAWMA register; call first)",
+            "maps_query": "RecyclePoints Limited Alakija Festac Lagos",
+            "accepted_materials": [
+                "Pure Water Sachets",
+                "PET Plastic",
+                "Aluminium Cans",
+                "Glass Bottles",
+                "Paper & Cartons"
+            ]
+        },
+        "R005": {
+            "name": "Wecyclers Nigeria Limited (Lagos Island)",
+            "address": "149 Bamgbose Street, Lagos Island, Lagos",
+            "contact": "0812 766 6203 (LAWMA register; call first)",
+            "maps_query": "Wecyclers Nigeria Limited Bamgbose Street Lagos Island",
+            "accepted_materials": [
+                "PET Plastic",
+                "Plastic Bags",
+                "Aluminium Cans",
+                "Glass Bottles (cullet)"
+            ]
+        },
+        "R006": {
+            "name": "Wecyclers Nigeria Ltd. (Surulere / Itire-Ikate)",
+            "address": "Adeyole Street, Liko Bus Stop, Surulere, Lagos",
+            "contact": "0818 776 4011 (LAWMA register; call first)",
+            "maps_query": "Wecyclers Nigeria Adeyole Street Liko Bus Stop Surulere Lagos",
+            "accepted_materials": [
+                "PET Plastic",
+                "Plastic Bags",
+                "Aluminium Cans",
+                "Glass Bottles (cullet)"
+            ]
+        },
+        "R007": {
+            "name": "Plastic Solutions Ng (carton aggregator)",
+            "address": "Ogombo, Eti-Osa (Lekki side), Lagos",
+            "contact": "0818 720 4280 (LAWMA register; call first)",
+            "maps_query": "Plastic Solutions Ng Ogombo Lekki Lagos",
+            "accepted_materials": [
+                "Cartons & Corrugated Paper",
+                "Plastics"
+            ]
+        },
+        "R008": {
+            "name": "Octopi Recycling",
+            "address": "Plot 665, Ahmadiyyah Bus Stop, Abeokuta Expressway, Ifako-Ijaiye, Lagos",
+            "contact": "No phone verified: check their website or socials; call first",
+            "maps_query": "Octopi Recycling Ahmadiyyah Bus Stop Abeokuta Expressway Lagos",
+            "accepted_materials": [
+                "HDPE & PP Plastic",
+                "Paper & Cardboard"
+            ]
+        },
+        "R009": {
+            "name": "Hinckley Recycling Nigeria Ltd (approved e-waste recycler)",
+            "address": "Ojota, Lagos (confirm exact drop-off address first)",
+            "contact": "www.hinckley.com.ng; call first",
+            "maps_query": "Hinckley Recycling Ojota Lagos",
+            "accepted_materials": [
+                "Electronics (e-waste)"
             ]
         }
     },
-    "categories": {
-        "organic": {
-            "name": "Organic / Wet Waste",
-            "handling_route": "Composting / Biogas",
-            "description": "Food scraps, peels."
-        },
-        "recyclable_dry": {
-            "name": "Dry Recyclables",
-            "handling_route": "Recycling",
-            "description": "PET, Glass, Paper, Metal."
-        },
-        "hazardous": {
-            "name": "Hazardous Household",
-            "handling_route": "Specialized Drop-off",
-            "description": "Batteries, E-waste."
-        },
-        "residual": {
-            "name": "Residual Waste",
-            "handling_route": "Municipal Landfill",
-            "description": "Non-recyclable, non-hazardous waste."
-        }
-    },
     "items": {
-        "food_waste": {
-            "display_name": "Food Remnants",
-            "aliases": [
-                "food",
-                "leftovers",
-                "peels",
-                "kitchen waste"
-            ],
-            "category": "organic",
-            "material_family": "organic",
-            "hazard_type": [
-                "Environmental"
-            ],
-            "hazard_level": "Low",
-            "disposal_action": "Compost",
-            "composition": "Organic matter (carbohydrates, proteins, lipids).",
-            "physical_properties": "Biodegradable, high moisture content.",
-            "warnings": [
-                {
-                    "severity": "Medium",
-                    "message": "Attracts pests if left uncovered."
-                }
-            ],
-            "preparation_steps": [
-                "Separate from plastics.",
-                "Keep in a covered bin.",
-                "Compost with dry leaves."
-            ],
-            "recycler_ids": [],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Composting",
-                "text": "Backyard composting is recognized as a process of decomposing organic solid waste.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
-        },
-        "general_residual": {
-            "display_name": "General Residual Waste",
-            "aliases": [
-                "dirty wrapper",
-                "non-recyclable",
-                "trash"
-            ],
-            "category": "residual",
-            "material_family": "residual",
-            "hazard_type": [
-                "Environmental"
-            ],
-            "hazard_level": "Low",
-            "disposal_action": "General Waste",
-            "composition": "Mixed materials (dirty plastics, non-recyclable film).",
-            "physical_properties": "Non-recyclable due to contamination.",
-            "warnings": [
-                {
-                    "severity": "Low",
-                    "message": "Ensure it does not contain hazardous materials."
-                }
-            ],
-            "preparation_steps": [
-                "Dispose in a tied municipal waste bin."
-            ],
-            "general_guidance": [
-                "Check local LAWMA PSP operator collection days."
-            ],
-            "recycler_ids": [],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Disposal",
-                "text": "Waste generators must place waste in securely tied bags or leak-proof bins.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
-        },
         "sachet_water_ldpe": {
-            "display_name": "Sachet Water Film (LDPE)",
-            "aliases": [
-                "pure water",
-                "sachet",
-                "sachet water bag"
-            ],
-            "category": "residual",
-            "material_family": "ldpe",
-            "hazard_type": [
-                "Environmental",
-                "Physical"
-            ],
-            "hazard_level": "High",
+            "display_name": "Sachet Water Film (Pure Water)",
+            "category": "Residual Waste",
+            "hazard_level": "Low",
             "disposal_action": "General Waste",
-            "composition": "Low-Density Polyethylene (LDPE). A thin, flexible plastic film.",
-            "physical_properties": "Waterproof, highly flexible, non-biodegradable.",
-            "warnings": [
-                {
-                    "severity": "Critical",
-                    "message": "DO NOT BURN (releases toxic fumes, CO, VOCs, and thick smoke)."
-                },
-                {
-                    "severity": "High",
-                    "message": "Major cause of drainage blockage and flooding in Lagos."
-                }
-            ],
+            "eco_points": 5,
+            "composition": "Low-density polyethylene (LDPE) film.",
+            "impact_fact": "Nigerians use about 13.7 million water sachets every day (NESREA figure), and empty sachets were named a major cause of Lagos floods. Pickers skip them because they are paid by weight!",
             "preparation_steps": [
-                "Rinse and dry to prevent odors.",
-                "Collect for eco-brick projects if possible."
+                "Shake out the water and let it dry.",
+                "Keep them in one bag (a rice bag works) until you have a bulk.",
+                "Best: hand them to a sachet scheme such as RecyclePoints.",
+                "No scheme near you? Pack them tightly into a bottle (eco-brick) or tie them in a bag for your PSP collector."
             ],
-            "general_guidance": [
-                "Not accepted by standard LAWMA recyclers. Dispose in municipal bins."
-            ],
-            "recycler_ids": [],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Litter",
-                "text": "Litter, which includes water sachets left in undesignated areas, is strictly prohibited.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
-        },
-        "battery": {
-            "display_name": "Spent Batteries",
-            "aliases": [
-                "battery",
-                "AA",
-                "AAA",
-                "phone battery"
-            ],
-            "category": "hazardous",
-            "material_family": "battery",
-            "hazard_type": [
-                "Health",
-                "Environmental"
-            ],
-            "hazard_level": "Critical",
-            "disposal_action": "Hazardous Drop-off",
-            "composition": "Heavy metals (lead, mercury, cadmium) and reactive materials (lithium, zinc, carbon).",
-            "physical_properties": "Solid metal casing, potentially combustible or leaking.",
             "warnings": [
-                {
-                    "severity": "Critical",
-                    "message": "DO NOT puncture or burn (explosion/fire risk)."
-                },
-                {
-                    "severity": "High",
-                    "message": "Toxic materials leach into soil and groundwater."
-                }
-            ],
-            "preparation_steps": [
-                "Tape the terminals with clear tape.",
-                "Store in a plastic container."
-            ],
-            "general_guidance": [
-                "Take to a NESREA-licensed e-waste facility."
+                "DON'T BURN: burning plastic gives off toxic fumes, and open burning of waste is an offence.",
+                "DON'T LITTER: sachets block drains and flood your street."
             ],
             "recycler_ids": [
-                "R003"
+                "R004"
             ],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Hazardous Waste",
-                "text": "Hazardous waste must be segregated from general waste and handled with special precautions.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
-        },
-        "e_waste": {
-            "display_name": "Electronic Waste",
-            "aliases": [
-                "phone",
-                "laptop",
-                "charger",
-                "electronics"
-            ],
-            "category": "hazardous",
-            "material_family": "ewaste",
-            "hazard_type": [
-                "Health",
-                "Environmental"
-            ],
-            "hazard_level": "High",
-            "disposal_action": "Hazardous Drop-off",
-            "composition": "Plastics, glass, circuit boards, and heavy metals.",
-            "physical_properties": "Complex mixture, often containing lithium-ion batteries.",
-            "warnings": [
-                {
-                    "severity": "High",
-                    "message": "Do not break screens (toxic chemicals)."
-                }
-            ],
-            "preparation_steps": [
-                "Wipe personal data.",
-                "Remove batteries if possible."
-            ],
-            "recycler_ids": [
-                "R003"
-            ],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "End-of-Life Waste",
-                "text": "End-of-Life Waste includes discarded electrical and electronic appliances.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
+            "legal_guidance": "The law (NESREA S.I. 28 of 2009) lists 'water sachet' as litter: it must go in a bin, and occupants who let litter escape risk a ₦20,000 fine and/or 6 months. Sachets are NOT banned in Lagos."
         },
         "pet_bottle": {
             "display_name": "PET Plastic Bottle",
-            "aliases": [
-                "water bottle",
-                "coke bottle",
-                "plastic bottle"
-            ],
-            "category": "recyclable_dry",
-            "material_family": "pet",
-            "hazard_type": [
-                "Environmental"
-            ],
+            "category": "Dry Recyclable",
             "hazard_level": "Low",
             "disposal_action": "Recycle",
-            "composition": "Polyethylene Terephthalate (PET).",
-            "physical_properties": "Transparent, gas-tight, durable.",
-            "warnings": [
-                {
-                    "severity": "Low",
-                    "message": "Littering causes microplastics in water bodies."
-                }
-            ],
+            "eco_points": 20,
+            "composition": "Polyethylene terephthalate (PET, code 1). The cap is a different plastic.",
+            "impact_fact": "Nigeria uses about 150,000 tonnes of PET bottles a year, half of them in Lagos, and roughly 4 in 5 are never reused or recycled (FBRA, 2019). Recycling PET saves about 40% of the energy of making new!",
+            "market_value": "₦250/kg (street collectors) up to about ₦600/kg for clean white PET (2025 reports; prices change)",
             "preparation_steps": [
-                "Empty and rinse.",
-                "Remove cap.",
-                "Crush to save space."
+                "Empty it and give it a quick rinse.",
+                "Take off the cap and keep it separate.",
+                "Crush it flat, then bag it with other bottles.",
+                "Clear (white) bottles sell best."
             ],
-            "market_value": {
-                "amount": "Approx. \u20a6250 - \u20a6300/kg",
-                "source": "Local Scrap Buyers (Volatile)",
-                "date": "2026-10"
-            },
+            "warnings": [
+                "Don't leave liquid inside: dirty bottles get rejected.",
+                "Don't throw bottles in gutters: they block drains.",
+                "Don't burn plastic."
+            ],
             "recycler_ids": [
+                "R004",
+                "R005",
                 "R001",
                 "R002"
             ],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Segregation",
-                "text": "Recyclables must be separated from general waste before collection.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
+            "legal_guidance": "Recyclables must be separated before collection (S.I. 28 of 2009, Reg 11), and drinks companies must run bottle buy-back schemes. PET bottles are NOT banned in Lagos."
         },
-        "scrap_metal": {
+        "battery": {
+            "display_name": "Spent Batteries",
+            "category": "Hazardous Waste",
+            "hazard_level": "Critical",
+            "disposal_action": "Hazardous Drop-off",
+            "eco_points": 50,
+            "composition": "Depends on type: lead and acid (car/inverter), lithium and flammable liquid (phone/power bank), zinc and manganese (AA/AAA).",
+            "impact_fact": "Over 55 million children in Sub-Saharan Africa have blood-lead levels above 10 µg/dL, linked to unsafe recycling of lead-acid batteries and e-waste. Never crack a battery open!",
+            "preparation_steps": [
+                "Do NOT open or crush it.",
+                "Small batteries (AA, button, lithium): tape both ends with clear tape.",
+                "Keep in a dry plastic container away from heat and children.",
+                "Car/inverter battery: return it to the dealer. Others: e-waste centre or shop that takes old batteries (call first)."
+            ],
+            "warnings": [
+                "DON'T puncture, crush or open: fire and chemical risk.",
+                "DON'T bin or burn it: toxic metals, and burning waste is an offence (₦200,000 and/or 1 year).",
+                "Hot or swollen phone/power-bank battery: stop using it and keep it outdoors on a non-flammable surface."
+            ],
+            "recycler_ids": [
+                "R003"
+            ],
+            "legal_guidance": "Open burning of waste is an offence (S.I. 28 of 2009). Batteries are on Nigeria's producer take-back list, and e-waste rules (S.I. 23 of 2011) ban dumping or burning them."
+        },
+        "aluminium_cans": {
             "display_name": "Aluminium Cans",
-            "aliases": [
-                "metal",
-                "aluminium",
-                "cans"
-            ],
-            "category": "recyclable_dry",
-            "material_family": "metal",
-            "hazard_type": [
-                "Physical"
-            ],
+            "category": "Dry Recyclable",
             "hazard_level": "Low",
             "disposal_action": "Recycle",
-            "composition": "Aluminium alloys.",
-            "physical_properties": "Dense, high melting point, conductive.",
-            "warnings": [
-                {
-                    "severity": "Medium",
-                    "message": "Sharp edges can injure sanitation workers."
-                }
-            ],
+            "eco_points": 20,
+            "composition": "Aluminium alloy with a thin plastic lining inside.",
+            "impact_fact": "Recycling aluminium saves about 95% of the energy needed to make new metal. Cans are cash: collect a bag and sell it by weight!",
+            "market_value": "Changes weekly: ask the buyer for today's price per kg (the old ₦50-80/kg figure is outdated)",
             "preparation_steps": [
-                "Rinse food cans.",
-                "Be careful of sharp edges."
+                "Empty and rinse the can.",
+                "Crush it to save space (wear gloves).",
+                "Keep aerosol cans out of the bag.",
+                "Sell by weight to a scrap buyer or hand it to a recycler."
+            ],
+            "warnings": [
+                "Sharp edges: wear gloves when crushing.",
+                "No aerosol cans in the cans bag (explosion risk)."
             ],
             "recycler_ids": [
+                "R004",
+                "R005",
                 "R001",
                 "R002"
             ],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Segregation",
-                "text": "Metals must be separated from general waste at the source.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
+            "legal_guidance": "Cans and metals are on Nigeria's producer take-back list (S.I. 28 of 2009, Schedule VIII) and must be separated before collection."
         },
-        "paper_cardboard": {
-            "display_name": "Paper & Cardboard",
-            "aliases": [
-                "paper",
-                "cardboard",
-                "carton"
-            ],
-            "category": "recyclable_dry",
-            "material_family": "paper",
-            "hazard_type": [
-                "Environmental"
-            ],
+        "food_waste": {
+            "display_name": "Food Remnants",
+            "category": "Organic Waste",
             "hazard_level": "Low",
-            "disposal_action": "Recycle",
-            "composition": "Cellulose fibers derived from wood pulp.",
-            "physical_properties": "Dry, porous, flammable, degradable.",
-            "warnings": [
-                {
-                    "severity": "Low",
-                    "message": "Wet paper ruins recycling batches."
-                }
-            ],
+            "disposal_action": "Compost",
+            "eco_points": 10,
+            "composition": "Organic matter (starch, protein, fat) and water: rice, peels, bones, stew.",
+            "impact_fact": "Lagos makes about 11,000 tonnes of waste a day and roughly half is organic. Rotting food in dumps releases methane, which traps about 80 times more heat than CO2 over 20 years!",
             "preparation_steps": [
-                "Keep dry.",
-                "Flatten boxes."
+                "Separate food from plastics, sachets and paper.",
+                "Use a bin with a lid or a tied bag, and empty it daily.",
+                "Home compost: mix scraps with dry leaves. Cooked food is better in a bokashi bin.",
+                "No compost? Tie it in a bag for your PSP collector."
+            ],
+            "warnings": [
+                "Don't mix food waste with recyclables: it spoils them.",
+                "Don't burn it or dump it in drains: it attracts flies and rats."
             ],
             "recycler_ids": [],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Segregation",
-                "text": "Paper must be separated from general waste at the source.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
+            "legal_guidance": "Households must keep waste in lidded bins or tied bags and separate recyclables (S.I. 28 of 2009, Reg 11 and 13). The law recognises backyard composting of food waste."
         },
         "glass_bottle": {
-            "display_name": "Glass Bottles",
-            "aliases": [
-                "glass",
-                "beer bottle",
-                "wine bottle"
-            ],
-            "category": "recyclable_dry",
-            "material_family": "glass",
-            "hazard_type": [
-                "Physical"
-            ],
+            "display_name": "Glass Bottles & Jars",
+            "category": "Dry Recyclable",
             "hazard_level": "Low",
             "disposal_action": "Recycle",
-            "composition": "Silica sand, soda ash, and limestone.",
-            "physical_properties": "Brittle, transparent, chemically inert.",
-            "warnings": [
-                {
-                    "severity": "Medium",
-                    "message": "Broken glass is a physical hazard."
-                }
-            ],
+            "eco_points": 20,
+            "composition": "Soda-lime glass (silica sand, soda ash, limestone).",
+            "impact_fact": "In May 2024 Beta Glass and Wecyclers launched cullet trucks in Lagos to collect old bottles and melt them into new ones. Your empty bottle can become a new bottle!",
             "preparation_steps": [
-                "Rinse.",
-                "Handle broken glass carefully (wrap in paper)."
+                "Rinse the bottle or jar and remove the lid.",
+                "Deposit bottles (beer, soft drink): return them whole to the seller.",
+                "Wrap broken glass in thick paper, label it, and wear gloves.",
+                "Hand clean glass to Wecyclers or RecyclePoints (call first)."
             ],
-            "recycler_ids": [],
-            "general_guidance": [
-                "No verified LAWMA glass recycler in this dataset. Contact local bottle merchants."
+            "warnings": [
+                "Broken glass cuts: wrap it and wear gloves.",
+                "Don't mix glass loose with other recyclables: it can hurt collectors."
             ],
-            "legal_guidance": {
-                "type": "paraphrase",
-                "topic": "Segregation",
-                "text": "Glass must be separated from general waste at the source.",
-                "citation": "NESREA Sanitation and Wastes Control Regulations 2009"
-            }
+            "recycler_ids": [
+                "R005",
+                "R006",
+                "R004"
+            ],
+            "legal_guidance": "Glass is on Nigeria's producer take-back list (S.I. 28 of 2009, Schedule VIII, from 2011) and recyclables must be separated before collection."
+        },
+        "paper_cardboard": {
+            "display_name": "Paper & Cartons",
+            "category": "Dry Recyclable",
+            "hazard_level": "Low",
+            "disposal_action": "Recycle",
+            "eco_points": 20,
+            "composition": "Cellulose fibre (corrugated cardboard, newsprint, office paper).",
+            "impact_fact": "Cartons are cash: collectors pay about ₦100/kg and resell at ₦180-230/kg. Nigeria's Dahua paper mill in Ogun turns waste paper from Lagos and other states into packaging!",
+            "market_value": "About ₦100/kg for clean, dry cartons (collector price reported; varies)",
+            "preparation_steps": [
+                "Keep paper and cartons dry and clean.",
+                "Flatten boxes and tie them in bundles.",
+                "Don't soak cartons to add weight: buyers reject them.",
+                "Greasy boxes and tissue go in the general bin."
+            ],
+            "warnings": [
+                "Wet or greasy paper can't be recycled.",
+                "Don't burn paper: open burning of waste is an offence."
+            ],
+            "recycler_ids": [
+                "R007",
+                "R008",
+                "R004"
+            ],
+            "legal_guidance": "Newsprint and paper are on Nigeria's producer take-back list (S.I. 28 of 2009, Schedule VIII), and recyclables must be separated before collection."
+        },
+        "e_waste": {
+            "display_name": "Old Phones, Chargers & Electronics",
+            "category": "Hazardous Waste",
+            "hazard_level": "High",
+            "disposal_action": "Hazardous Drop-off",
+            "eco_points": 50,
+            "composition": "Plastics, copper, gold and other metals, plus lead, mercury and flame retardants.",
+            "impact_fact": "Africa formally collects and recycles less than 1% of its e-waste (Global E-waste Monitor 2024). Burning cables releases lead and mercury into your neighbourhood!",
+            "preparation_steps": [
+                "Switch off and unplug; remove the battery if it comes out easily.",
+                "Reset the phone and wipe your data first.",
+                "Keep it whole: don't smash or burn it for the copper.",
+                "Take it to an approved e-waste centre (call first)."
+            ],
+            "warnings": [
+                "DON'T burn cables or break open devices: toxic fumes.",
+                "DON'T put e-waste in household bins or dumpsites: it is illegal.",
+                "Wipe your data before handing over."
+            ],
+            "recycler_ids": [
+                "R003",
+                "R009"
+            ],
+            "legal_guidance": "E-waste must not be dumped, burned or binned; producers must take back old devices and consumers return them to collection points (S.I. 23 of 2011). Penalty for individuals: up to ₦200,000 and/or 6 months (2011 figure)."
         }
     }
 }
