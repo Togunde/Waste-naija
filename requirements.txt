@@ -8,3 +8,4 @@ requests
 beautifulsoup4
 playwright
 pandas
+qwen-vl-utils
