@@ -1,6 +1,4 @@
 import os, json, hashlib
-import requests
-from functools import lru_cache
 import streamlit as st
 from PIL import Image
 import re, difflib, html
@@ -94,88 +92,6 @@ DEMO = os.getenv("WASTE_DEMO") == "1"          # no model: pick the item by hand
 CONF_MIN = float(os.getenv("WASTE_CONF_MIN", "0.45"))
 
 st.set_page_config(page_title="Waste-Naija | AI Waste Sorting", page_icon="♻️", layout="wide", initial_sidebar_state="collapsed")
-
-
-# ---------------------------------------------------------------- multilingual interface
-# Uses the existing `requests` dependency. If the translation service is unavailable,
-# the app safely falls back to the original English text.
-LANGUAGES = {
-    "English": "en",
-    "Hausa": "ha",
-    "Yorùbá": "yo",
-    "Igbo": "ig",
-    "Nigerian Pidgin (beta)": "pcm",
-}
-language_name = st.selectbox(
-    "🌐 Language / Harshe / Èdè / Asụsụ",
-    list(LANGUAGES.keys()),
-    index=0,
-    key="interface_language",
-)
-TARGET_LANGUAGE = LANGUAGES[language_name]
-
-@lru_cache(maxsize=2048)
-def _translate_cached(text, target):
-    if not text or target == "en":
-        return text
-    try:
-        response = requests.get(
-            "https://translate.googleapis.com/translate_a/single",
-            params={"client": "gtx", "sl": "auto", "tl": target, "dt": "t", "q": text},
-            timeout=5,
-        )
-        response.raise_for_status()
-        data = response.json()
-        translated = "".join(part[0] for part in data[0] if part and part[0])
-        return translated or text
-    except Exception:
-        # Translation is an enhancement, never a reason for the app to stop working.
-        return text
-
-def tr(value):
-    """Translate a plain user-facing string; preserve the English fallback on failure."""
-    if not isinstance(value, str) or TARGET_LANGUAGE == "en":
-        return value
-    return _translate_cached(value, TARGET_LANGUAGE)
-
-def tr_html(value):
-    """Translate visible HTML text only, leaving tags and CSS classes untouched."""
-    if not isinstance(value, str) or TARGET_LANGUAGE == "en":
-        return value
-    parts = re.split(r"(<[^>]+>)", value)
-    return "".join(part if part.startswith("<") and part.endswith(">") else tr(part)
-                   for part in parts)
-
-# Wrap Streamlit display functions so the existing app UI is translated in place.
-# Widget keys/options that drive app logic remain unchanged.
-def _wrap_streamlit_text_function(function_name):
-    original = getattr(st, function_name, None)
-    if original is None:
-        return
-    def wrapped(*args, **kwargs):
-        args = list(args)
-        if args and isinstance(args[0], str):
-            if function_name == "markdown" and kwargs.get("unsafe_allow_html", False):
-                args[0] = tr_html(args[0])
-            else:
-                args[0] = tr(args[0])
-        elif function_name == "tabs" and args and isinstance(args[0], (list, tuple)):
-            args[0] = [tr(label) for label in args[0]]
-        if isinstance(kwargs.get("text"), str):
-            kwargs["text"] = tr(kwargs["text"])
-        if callable(kwargs.get("format_func")):
-            old_format = kwargs["format_func"]
-            kwargs["format_func"] = lambda item: tr(old_format(item))
-        return original(*args, **kwargs)
-    setattr(st, function_name, wrapped)
-
-for _function_name in (
-    "markdown", "title", "header", "subheader", "caption", "write", "text",
-    "info", "success", "warning", "error", "exception", "button", "selectbox",
-    "radio", "text_input", "text_area", "camera_input", "file_uploader",
-    "expander", "tabs", "metric", "progress", "toast", "status"
-):
-    _wrap_streamlit_text_function(_function_name)
 
 def local_css(path):
     if os.path.exists(path):
